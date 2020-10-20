@@ -87,10 +87,11 @@ const cssLoaderConfig = (
     options: Object.assign(
       {},
       {
-        modules: cssModules,
+        modules: cssModules ? {
+          exportOnlyLocals: isServer
+        } : false,
         sourceMap: dev,
         importLoaders: loaders.length + (postcssLoader ? 1 : 0),
-        onlyLocals: isServer,
       },
       cssLoaderOptions,
     ),
