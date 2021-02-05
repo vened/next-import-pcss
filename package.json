@@ -1,6 +1,6 @@
 {
   "name": "next-import-pcss",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "importing css file from node_modules for nextjs",
   "main": "index.js",
   "repository": "https://github.com/vened/next-import-pcss.git",
